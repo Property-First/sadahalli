@@ -155,7 +155,7 @@ body {
 
   .hero-slide {
     background-image: url('./images/SADAHALLI_banner.png');
-    height:490px; /* ✅ FIX */
+    height: 500px; /* ✅ FIX */
     background-size: contain; /* ✅ key fix */
     background-repeat: no-repeat;
   
@@ -255,7 +255,7 @@ body {
 .enquire {
   position: fixed;
   right: 20px;
-  bottom: 100px;
+  bottom: 135px;
   background: #c9a24a;
   color: #fff;
   border: none;
@@ -267,19 +267,33 @@ body {
 }
 
 /* WhatsApp Button */
-.whatsapp {
+.whatsapp-btn,
+.call-btn {
   position: fixed;
   right: 20px;
-  bottom: 10px;
-  /* background: #25D366; */
-  color: #fff;
-
-  padding: 14px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   font-size: 20px;
-  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   z-index: 999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+/* WhatsApp */
+.whatsapp-btn {
+  bottom: 20px;
+  background: #25D366;
+}
+
+/* Call */
+.call-btn {
+  bottom: 80px;
+  background: #007bff;
 }
 
 /* RESPONSIVE */
@@ -303,7 +317,7 @@ body {
   }
 
   .enquire {
-    bottom: 80px;
+    bottom: 135px;
     font-size: 12px;
   }
 }
