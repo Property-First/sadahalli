@@ -143,19 +143,19 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('./images/LODHA_banner.png');
+  background-image: url('./images/nambiar-banner.webp');
   background-size: cover;
   background-position: center;
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 60vh;
+    height: 26vh;
   }
 
   .hero-slide {
-    background-image: url('./images/SADAHALLI_banner.png');
-    height: 500px; /* ✅ FIX */
+    background-image: url('./images/nambiar-banner.webp');
+    /* ✅ FIX */
     background-size: contain; /* ✅ key fix */
     background-repeat: no-repeat;
   
@@ -210,7 +210,7 @@ body {
 
 /* Buttons */
 .hero-buttons {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 
@@ -392,7 +392,7 @@ body {
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .about-content h2 {
@@ -852,12 +852,34 @@ body {
           padding: 10px 60px; 
     }
 
+    .master-plans-grid{
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+      gap:30px;
+          padding: 10px 60px; 
+    }
+
     .plan-card{
       position:relative;
       overflow:hidden;
       border-radius:14px;
       height:380px;
       cursor:pointer;
+    }
+
+    .master-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:14px;
+      height:auto;
+      cursor:pointer;
+    }
+
+    .master-card img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:0.5s;
     }
 
     .plan-card img{
@@ -922,11 +944,23 @@ body {
        display:grid;
       grid-template-columns:repeat(1,1fr);
       gap:30px;
-          padding: 10px 60px;
+          padding: 10px 20px;
       }
-          .plan-card {
+      .plan-card {
         border-radius: 14px;
         height: 100px;
+    }
+
+    .master-plans-grid{
+       display:grid;
+      grid-template-columns:repeat(1,1fr);
+      gap:30px;
+          padding: 0px;
+      }
+
+     .master-card {
+        border-radius: 14px;
+        height: auto;
     }
 
      .overlay{
